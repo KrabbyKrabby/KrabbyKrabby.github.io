@@ -224,13 +224,6 @@ img {
   white-space: nowrap;
 }
 
-.hero__note {
-  margin: 0;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--color-text-soft);
-}
-
 .hero__interests-heading {
   margin: 0;
   text-transform: uppercase;
