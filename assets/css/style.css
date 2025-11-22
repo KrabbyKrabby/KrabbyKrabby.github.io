@@ -357,6 +357,13 @@ h1 {
   font-weight: 500;
 }
 
+.hero__meta-note {
+  margin: 0.9rem 0 0;
+  font-size: 0.9rem;
+  color: rgba(29, 31, 47, 0.7);
+  font-weight: 500;
+}
+
 .tag-list {
   list-style: none;
   display: flex;
