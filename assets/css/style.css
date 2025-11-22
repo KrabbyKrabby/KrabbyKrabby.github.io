@@ -208,12 +208,44 @@ img {
   filter: saturate(1.05);
 }
 
+.hero__info {
+  text-align: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
 .hero__note {
-  margin: 0.85rem 0 0;
+  margin: 0;
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--color-text-soft);
-  text-align: center;
+}
+
+.hero__interests {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-accent-dark);
+}
+
+.hero__interests li {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(68, 96, 247, 0.14);
 }
 
 .hero__kicker {
@@ -311,6 +343,13 @@ h1 {
   background: rgba(68, 96, 247, 0.12);
   color: var(--color-accent-dark);
   font-weight: 500;
+}
+
+.about__summary {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--color-text-soft);
+  max-width: 70ch;
 }
 
 .timeline {
