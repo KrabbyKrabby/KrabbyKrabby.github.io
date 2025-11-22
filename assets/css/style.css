@@ -388,13 +388,6 @@ h1 {
   font-weight: 500;
 }
 
-.about__summary {
-  margin: 0;
-  font-size: 1.05rem;
-  color: var(--color-text-soft);
-  max-width: 70ch;
-}
-
 .timeline {
   display: grid;
   gap: 2.5rem;
