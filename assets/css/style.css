@@ -84,13 +84,6 @@ img {
   letter-spacing: -0.02em;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", "Inter", serif;
-  font-weight: 600;
-}
-
 .section__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
