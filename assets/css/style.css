@@ -225,6 +225,13 @@ img {
   white-space: nowrap;
 }
 
+.hero__subtitle {
+  margin: 0;
+  font-size: 0.92rem;
+  color: rgba(29, 31, 47, 0.68);
+  font-weight: 500;
+}
+
 .hero__interests-heading {
   margin: 0;
   text-transform: uppercase;
