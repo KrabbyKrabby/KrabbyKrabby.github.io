@@ -183,6 +183,29 @@ img {
   align-items: start;
 }
 
+.hero__media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero__portrait {
+  margin: 0;
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 1/1.15;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.hero__portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero__kicker {
   text-transform: uppercase;
   letter-spacing: 0.26em;
@@ -486,8 +509,9 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .hero__badge {
+  .hero__media {
     justify-self: start;
+    align-items: flex-start;
   }
 
   .timeline::before {
