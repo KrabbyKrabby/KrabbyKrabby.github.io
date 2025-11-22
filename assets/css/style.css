@@ -496,6 +496,42 @@ h1 {
   color: var(--color-text);
 }
 
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.award-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 1.6rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(68, 96, 247, 0.08);
+  display: grid;
+  gap: 0.6rem;
+}
+
+.award-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+}
+
+.award-card p {
+  margin: 0;
+  color: var(--color-text-soft);
+  font-size: 0.95rem;
+}
+
+.award-meta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(29, 31, 47, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
