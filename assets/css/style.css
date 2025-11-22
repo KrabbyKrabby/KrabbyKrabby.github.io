@@ -234,17 +234,10 @@ img {
   color: var(--color-accent-dark);
 }
 
-.hero__interests-block {
-  margin-top: 0.45rem;
-  background: transparent;
-  border: 1px solid transparent;
-  border-radius: var(--radius-lg);
-  padding: 0.6rem 0.4rem;
-}
-
 .hero__interests {
   display: grid;
   gap: 0.4rem;
+  margin: 0.5rem 0 0;
 }
 
 .hero__interests-row {
