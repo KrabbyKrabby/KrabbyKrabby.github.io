@@ -221,6 +221,7 @@ img {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-text);
+  white-space: nowrap;
 }
 
 .hero__note {
