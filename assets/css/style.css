@@ -247,30 +247,32 @@ img {
 }
 
 .hero__interest {
-  padding: 0.45rem 0.95rem;
+  padding: 0.55rem 1.15rem;
   border-radius: 999px;
-  background: rgba(18, 33, 95, 0.16);
-  color: var(--color-accent-dark);
-  font-size: 0.85rem;
+  background: linear-gradient(135deg, rgba(68, 96, 247, 0.95), rgba(123, 143, 255, 0.92));
+  color: #ffffff;
+  font-size: 0.83rem;
   font-weight: 600;
-  letter-spacing: 0.01em;
-  border: 1px solid rgba(68, 96, 247, 0.28);
+  letter-spacing: 0.04em;
+  border: none;
   cursor: default;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 12px 26px rgba(68, 96, 247, 0.28);
 }
 
 .hero__interest:focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid rgba(255, 255, 255, 0.85);
   outline-offset: 2px;
 }
 
 .hero__interest:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(18, 33, 95, 0.16);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(68, 96, 247, 0.32);
+  filter: brightness(1.05);
 }
 
 .hero__kicker {
