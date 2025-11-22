@@ -187,23 +187,33 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .hero__portrait {
   margin: 0;
   width: 100%;
-  max-width: 240px;
-  aspect-ratio: 1/1.15;
-  border-radius: var(--radius-lg);
+  max-width: 280px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
   overflow: hidden;
-  box-shadow: var(--shadow-md);
+  position: relative;
+  box-shadow: 0 20px 45px rgba(12, 21, 48, 0.18);
 }
 
 .hero__portrait img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: saturate(1.05);
+}
+
+.hero__note {
+  margin: 0.85rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-soft);
+  text-align: center;
 }
 
 .hero__kicker {
@@ -286,30 +296,6 @@ h1 {
   font-weight: 500;
 }
 
-.hero__badge {
-  align-self: center;
-  background: var(--color-bg);
-  color: #fff;
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  text-align: center;
-  box-shadow: var(--shadow-md);
-}
-
-.badge-title {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.badge-subtitle {
-  display: block;
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.82);
-  margin-top: 0.75rem;
-}
-
 .tag-list {
   list-style: none;
   display: flex;
@@ -333,33 +319,12 @@ h1 {
   position: relative;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0.5rem;
-  bottom: 0.5rem;
-  left: 0.75rem;
-  width: 2px;
-  background: rgba(68, 96, 247, 0.25);
-}
-
 .timeline__item {
   position: relative;
   background: #fff;
   border-radius: var(--radius-lg);
-  padding: 1.75rem 2rem 1.75rem 3.5rem;
+  padding: 1.75rem 2rem;
   box-shadow: var(--shadow-sm);
-}
-
-.timeline__item::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--color-accent);
-  top: 2.2rem;
-  left: 0.25rem;
 }
 
 .timeline__item h3 {
@@ -422,6 +387,14 @@ h1 {
 .cards--projects .card--project:focus-within {
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
+}
+
+.card__link {
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1.1rem;
 }
 
 .publication {
@@ -514,16 +487,8 @@ h1 {
     align-items: flex-start;
   }
 
-  .timeline::before {
-    left: 1.25rem;
-  }
-
   .timeline__item {
-    padding-left: 4.75rem;
-  }
-
-  .timeline__item::before {
-    left: 0.9rem;
+    padding: 1.75rem 1.5rem;
   }
 }
 
