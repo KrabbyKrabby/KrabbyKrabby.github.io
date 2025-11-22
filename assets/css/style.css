@@ -188,6 +188,7 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
+  transform: translateX(-3px);
 }
 
 .hero__portrait {
