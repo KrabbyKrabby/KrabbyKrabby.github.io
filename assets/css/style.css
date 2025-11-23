@@ -592,6 +592,46 @@ h1 {
   letter-spacing: 0.14em;
 }
 
+.problem-summary {
+  display: grid;
+  gap: 0.9rem;
+  font-size: 1.02rem;
+  color: rgba(31, 35, 47, 0.72);
+}
+
+.problem-summary strong {
+  color: var(--color-text);
+}
+
+.problem-divider {
+  margin: 0 0.5rem;
+  color: rgba(31, 35, 47, 0.4);
+}
+
+.problem-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.problem-links li a {
+  font-weight: 600;
+  color: var(--color-accent-dark);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.15rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.problem-links li a:hover,
+.problem-links li a:focus-visible {
+  color: var(--color-accent);
+  border-color: rgba(47, 85, 164, 0.45);
+  text-decoration: none;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
