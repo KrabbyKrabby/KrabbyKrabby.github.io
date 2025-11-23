@@ -592,14 +592,34 @@ h1 {
   letter-spacing: 0.14em;
 }
 
-.problem-summary {
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.problem-card {
+  padding: 1.8rem;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(140deg, rgba(47, 85, 164, 0.08), rgba(47, 85, 164, 0));
+  border: 1px solid rgba(32, 43, 70, 0.08);
+  box-shadow: 0 14px 30px rgba(18, 28, 45, 0.12);
   display: grid;
   gap: 0.9rem;
+}
+
+.problem-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.problem-card p {
+  margin: 0;
   font-size: 1.02rem;
   color: rgba(31, 35, 47, 0.72);
 }
 
-.problem-summary strong {
+.problem-card strong {
   color: var(--color-text);
 }
 
@@ -608,27 +628,38 @@ h1 {
   color: rgba(31, 35, 47, 0.4);
 }
 
-.problem-links {
-  list-style: none;
+.problem-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem 1.25rem;
-  padding: 0;
-  margin: 0;
+  gap: 0.75rem 1rem;
 }
 
-.problem-links li a {
-  font-weight: 600;
+.problem-tag {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius-md);
+  background: rgba(47, 85, 164, 0.12);
   color: var(--color-accent-dark);
-  border-bottom: 1px solid transparent;
-  padding-bottom: 0.15rem;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
-.problem-links li a:hover,
-.problem-links li a:focus-visible {
-  color: var(--color-accent);
-  border-color: rgba(47, 85, 164, 0.45);
+.problem-tag span {
+  font-size: 0.8rem;
+  color: rgba(31, 35, 47, 0.6);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.problem-tag:hover,
+.problem-tag:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(31, 42, 72, 0.18);
+  background: rgba(47, 85, 164, 0.18);
   text-decoration: none;
 }
 
