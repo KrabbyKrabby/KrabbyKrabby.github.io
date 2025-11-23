@@ -592,12 +592,6 @@ h1 {
   letter-spacing: 0.14em;
 }
 
-.problem-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-}
-
 .problem-card {
   padding: 1.8rem;
   border-radius: var(--radius-lg);
