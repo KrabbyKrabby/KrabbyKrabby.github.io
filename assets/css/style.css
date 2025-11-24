@@ -218,7 +218,7 @@ img {
   height: 100%;
   object-fit: cover;
   filter: saturate(1.05);
-  object-position: 62% center;
+  object-position: 55% center;
 }
 
 .hero__info {
