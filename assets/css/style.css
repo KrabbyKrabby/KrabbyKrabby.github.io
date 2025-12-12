@@ -657,6 +657,43 @@ h1 {
   text-decoration: none;
 }
 
+.ielts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.ielts-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 1.6rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(32, 43, 70, 0.08);
+  display: grid;
+  justify-items: start;
+  gap: 0.5rem;
+}
+
+.ielts-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.ielts-score {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-accent-dark);
+}
+
+.ielts-meta {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(31, 35, 47, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
